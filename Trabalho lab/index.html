@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Minha Lista de Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/10322/10322385.png" type="image/x-icon">
+</head>
+<body>
+  <div class="todo-container">
+    <header>
+      <img src="./img/listas-de-tarefas-significado.jpeg" alt="Ícone de Tarefa" />
+      <h1>Minha Lista de Tarefas</h1>
+    </header>
+
+    <div class="task-input">
+      <input type="text" id="taskInput" placeholder="Digite sua próxima tarefa..." />
+      <button onclick="addTask()">Adicionar</button>
+    </div>
+
+    <p id="taskCount">Tarefas: 0</p>
+
+    <ul id="taskList"></ul>
+    <p id="emptyMessage" class="empty-message">Nenhuma tarefa ainda! Adicione algo para começar. 📝</p>
+
+    <footer>
+      <p>Desenvolvido por Mateus ✨</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
